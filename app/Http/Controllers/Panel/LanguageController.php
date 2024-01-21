@@ -108,8 +108,8 @@ class LanguageController extends Controller
         }
 
         $macro_indexes = [];
-        $macro_indexes = array_merge($macro_indexes, CaptchaScreen::$macro);
-        $macro_indexes = array_merge($macro_indexes, CaptchaSubscribeScreen::$macro);
+//        $macro_indexes = array_merge($macro_indexes, CaptchaScreen::$macro);
+//        $macro_indexes = array_merge($macro_indexes, CaptchaSubscribeScreen::$macro);
         $macro_indexes = array_merge($macro_indexes, StartScreen::$macro);
 //        $macro_indexes = array_merge($macro_indexes, WalletScreen::$macro);
 //        $macro_indexes = array_merge($macro_indexes, ReferralScreen::$macro);

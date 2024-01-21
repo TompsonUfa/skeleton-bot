@@ -10,7 +10,6 @@ $(document).ready(function () {
 
     }
 
-
     if ($('input[name=unit_edit_module]').length) {
 
         $('.unit-add-button').on('click', function () {
@@ -37,7 +36,7 @@ $(document).ready(function () {
                     tmp_ = '.unit-type-poll'
                 }
 
-                if(tmp_ !== '') {
+                if (tmp_ !== '') {
                     tmp.find('.unit-type-all').hide();
                     tmp.find(tmp_).show();
                 }
@@ -71,7 +70,6 @@ $(document).ready(function () {
 
 
     }
-
 
     function add_unit() {
         let tmp = $('#unit-template')
@@ -140,7 +138,7 @@ $(document).ready(function () {
         });
     }
 
-    $('#send-add').submit(function() {
+    $('#send-add').submit(function () {
         //Просматривать каждый элемент кнопки, если она не пустая, то получать id родителя и добавлять в элемент
         let myControls = $(this).find($('input[name="unit_id[]"]'));
         for (let i = 0; i < myControls.length; i++) {
@@ -155,7 +153,7 @@ $(document).ready(function () {
                     $(getControls[j]).find('input[name="unit_inline_id[]"]').attr('name', 'unit_inline_id[' + i + ']');
                     $(text).attr('name', 'unit_inline_id[' + i + '][' + j + '][caption]');
 
-                    if(button_type.val() !== 'web_app_captcha') {
+                    if (button_type.val() !== 'web_app_captcha') {
                         $(link).attr('name', 'unit_inline_id[' + i + '][' + j + '][link]');
                     }
 

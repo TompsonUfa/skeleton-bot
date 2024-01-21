@@ -7,7 +7,6 @@ use App\Models\TgGroup;
 use App\Models\TgHashRoute;
 use App\Models\TgUser;
 use App\Services\Telegram\Screens\CommandNotFoundScreen;
-use App\Services\Telegram\Screens\LangScreen;
 use App\Services\Telegram\Screens\SendScreen;
 use App\Services\Telegram\Traits\RoutesTrait;
 use Carbon\Carbon;

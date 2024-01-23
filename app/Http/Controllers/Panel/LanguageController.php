@@ -155,7 +155,9 @@ class LanguageController extends Controller
 
         Content::query()
             ->where('is_notif', 0)
+            ->where('lang', $code)
             ->delete();
+
         foreach ($all['macro'] as $k => $v) {
             if (empty($v)) {
                 continue;
@@ -236,6 +238,7 @@ class LanguageController extends Controller
 
         Content::query()
             ->where('is_notif', 1)
+            ->where('lang', $code)
             ->delete();
         foreach ($all['macro'] as $k => $v) {
             if (empty($v)) {
